@@ -4,7 +4,9 @@ CC = gcc
 
 FLAGS = -wall -Wextra -Werror
 
-SRCS = $(addprefix src/, ft_split.c)
+FILE = $(addsuffix .c, ft_split ft_strlen ft_putchar ft_putstr ft_swap ft_strdup)
+
+SRCS = $(addprefix src/, $(FILE))
 
 OBJS = ${SRCS:.c=.o}
 
