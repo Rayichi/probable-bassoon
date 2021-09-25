@@ -6,10 +6,13 @@ OBJS = ${SRCS:.c=.o}
 INCLUDE = 
 
 
-.c .o:
+.c.o:
 	${CC} ${CFLAGS} -I $(INCLUDE) -c $< -o ${<:.c=.o}
 
 all: ${NAME}
+
+$(NAME): ${OBJS}
+		$(CC) -o ${NAME} ${OBJS}
 
 clean:
 	rm -rf $(OBJS)
@@ -17,6 +20,6 @@ clean:
 fclean: clean
 	rm -rf $(NAME)
 
-re: flean $(NAME)
+re: fclean $(NAME)
 
 .PHONY: re all clean fclean
