@@ -4,7 +4,7 @@ CC = gcc
 
 FLAGS = -wall -Wextra -Werror
 
-FILE = $(addsuffix .c, ft_split ft_strlen ft_putchar ft_putstr ft_swap ft_strdup ft_strcat ft_putnbr ft_putnbr_base ft_strcmp ft_atoi)
+FILE = $(addsuffix .c, ft_split ft_strlen ft_putchar ft_putstr ft_swap ft_strdup ft_strcat ft_strncat ft_strncmp ft_putnbr ft_putnbr_base ft_strcmp ft_atoi)
 
 SRCS = $(addprefix src/, $(FILE))
 

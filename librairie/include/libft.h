@@ -16,5 +16,7 @@ int     ft_check_base(char *str);
 void    ft_putnbr_base(int nb, char *base);
 int     ft_atoi(char *str);
 char    *ft_strcat(char *dest, char *src);
+int     ft_strncmp(char *s1, char *s2, int n);
+char    *ft_strncat(char *dest, char *src, int n);
 
 #endif
