@@ -1,4 +1,4 @@
-#include "split.c"
+char       **ft_split(char  *str);
 #include <stdio.h>
 
 int main(int ac, char **av)

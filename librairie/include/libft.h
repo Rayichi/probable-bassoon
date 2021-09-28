@@ -12,5 +12,9 @@ void    ft_swap(int *a, int *b);
 char    *ft_strdup(char *str);
 void    ft_putnbr(int nb);
 int     ft_strcmp(char *s1, char *s2);
+int     ft_check_base(char *str);
+void    ft_putnbr_base(int nb, char *base);
+int     ft_atoi(char *str);
+char    *ft_strcat(char *dest, char *src);
 
 #endif
